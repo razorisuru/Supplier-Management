@@ -13,8 +13,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.UUID;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -26,7 +24,7 @@ import javax.servlet.http.HttpSession;
  *
  * @author iduni
  */
-@WebServlet(name = "LogInController", urlPatterns = {"/LogInController"})
+@WebServlet(name = "LogInControllerCOPY", urlPatterns = {"/LogInControllerCOPY"})
 public class LogInControllerCOPY extends HttpServlet {
 
     @Override
