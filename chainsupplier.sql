@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 12, 2024 at 07:35 PM
+-- Generation Time: Apr 24, 2024 at 06:27 PM
 -- Server version: 10.4.32-MariaDB
--- PHP Version: 8.2.12
+-- PHP Version: 8.0.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -544,15 +544,14 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `fname`, `lname`, `username`, `email`, `password`, `role`, `dp`) VALUES
-(1, 'Isuru', 'Bandara', 'isuru', 'isurubandara318@gmail.com', '*D9D1875DE2365F73F832EA8ECA6E4EF82D2849E9', 'admin', 'user1-128x128.jpg'),
+(1, 'Isuru', 'Bandara', 'isuru', 'isurubandara318@gmail.com', '*D94CEFBDE1918061ED12A447ECBC6BB87D1378B0', 'admin', 'user1-128x128.jpg'),
 (2, 'Idunil', 'Bandara', 'idu', 'idunil@gmail.com', '*23AE809DDACAF96AF0FD78ED04B6A265E05AA257', 'admin', 'user4-128x128.jpg'),
-(3, 'Flash', 'Tharanga', 'flash', 'flash@gmail.com', '*D94CEFBDE1918061ED12A447ECBC6BB87D1378B0', 'admin', 'user7-128x128.jpg'),
+(3, 'Flash', 'Tharanga', 'flash', 'flash@gmail.com', '*D94CEFBDE1918061ED12A447ECBC6BB87D1378B0', 'employee', 'user7-128x128.jpg'),
 (4, 'Amindu', 'Sangeeth', 'ami', 'ami@gmail.com', '*23AE809DDACAF96AF0FD78ED04B6A265E05AA257', 'employee', 'user4-128x128.jpg'),
 (16, 'dd', 'dd', 'dd', 'isurubandara318@gmail.coggg', '*2F3B76898A59E6BB293D056656D934848B96A444', 'user', 'user-def-128x128.jpg'),
 (17, 'dd', 'dd', 'dd', 'isurubandara318@gmail.coggg', '*44019FB6C583EFACD2FB2F1A1960B97F86E36A74', 'user', 'user-def-128x128.jpg'),
 (18, 'dd', 'dd', 'ddddd', 'isurubandara318@gmd', '*78070D954FAB99FA683FD2DD54E50350C449B388', 'user', 'user-def-128x128.jpg'),
-(19, 'John', 'Bada', 'john', 'john@gg.com', '*4EB723494B91D34CCD2B9901D94F9A3404360033', 'employee', 'user-def-128x128.jpg'),
-(20, 'Isuru', 'Bandara', 'razor', 'isurubandara@gmail.com', '*D9D1875DE2365F73F832EA8ECA6E4EF82D2849E9', 'user', 'user-def-128x128.jpg');
+(19, 'John', 'Bada', 'john', 'john@gg.com', '*4EB723494B91D34CCD2B9901D94F9A3404360033', 'employee', 'user-def-128x128.jpg');
 
 --
 -- Triggers `users`
@@ -621,10 +620,7 @@ INSERT INTO `users_audit` (`Users_Audit_ID`, `UserID`, `username`, `Action`, `Ti
 (19, 19, 'root@localhost', 'INSERT', '2024-04-24 16:22:30', NULL, NULL, NULL, NULL, NULL, NULL),
 (20, 1, 'root@localhost', 'UPDATE', '2024-04-24 16:23:31', 'Isuru', 'Bandara', 'isuru', 'isurubandara318@gmail.com', 'admin', 'user1-128x128.jpg'),
 (21, 1, 'root@localhost', 'UPDATE', '2024-04-24 16:23:47', 'Isuru', 'Bandara', 'isuru', 'isurubandara318@gmail.com', 'admin', 'user1-128x128.jpg'),
-(22, 3, 'root@localhost', 'UPDATE', '2024-04-24 16:25:29', 'Flash', 'Tharanga', 'flash', 'flash@gmail.com', 'employee', 'user2-160x160.jpg'),
-(23, 20, 'root@localhost', 'INSERT', '2024-09-12 17:09:26', NULL, NULL, NULL, NULL, NULL, NULL),
-(24, 1, 'root@localhost', 'UPDATE', '2024-09-12 17:11:26', 'Isuru', 'Bandara', 'isuru', 'isurubandara318@gmail.com', 'admin', 'user1-128x128.jpg'),
-(25, 3, 'root@localhost', 'UPDATE', '2024-09-12 17:12:25', 'Flash', 'Tharanga', 'flash', 'flash@gmail.com', 'employee', 'user7-128x128.jpg');
+(22, 3, 'root@localhost', 'UPDATE', '2024-04-24 16:25:29', 'Flash', 'Tharanga', 'flash', 'flash@gmail.com', 'employee', 'user2-160x160.jpg');
 
 --
 -- Indexes for dumped tables
@@ -771,13 +767,13 @@ ALTER TABLE `suppliers_audit`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `users_audit`
 --
 ALTER TABLE `users_audit`
-  MODIFY `Users_Audit_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `Users_Audit_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- Constraints for dumped tables
